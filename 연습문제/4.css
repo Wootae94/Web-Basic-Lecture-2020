@@ -1,0 +1,33 @@
+h1 {
+    color: brown;
+    text-align: center;
+}
+body {
+    background-color: aliceblue;
+}
+header {
+    border-bottom: 1px solid;
+}
+ul {
+    border: 1px dotted ;
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'HYFMPYUN';
+    src: url(media/HMFMPYUN.TTF);
+}
+p {
+    text-indent: 1em;
+    font-size: 1em;
+    font-family:'HYFMPYUN';
+}
+h2 {
+    color: blue;
+    text-shadow: 3px 3px 5px skyblue;
+}
+footer {
+    background-color: orange;
+    border-radius: 15px;
+}
