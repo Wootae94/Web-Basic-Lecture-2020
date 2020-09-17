@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+
+    <div class="container-fluid">
+        <h3>Basic Navbar Example</h3>
+        <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+        <p>The navbar-expand-xl|lg|md|sm class determines when the navbar should stack vertically (on extra large,
+            large, medium or small screens).</p>
+    </div>
+    <hr>
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+
+    <div class="container-fluid">
+        <h3>Centered Navbar</h3>
+        <p>Use the .justify-content-center class to center the navigation bar.</p>
+        <p>In this example, the navbar will be centered on medium, large and extra large screens. On small screens it
+            will be displayed vertically and left-aligned (because of the .navbar-expand-sm class).</p>
+    </div>
+    <hr>
+  
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </nav>
+<br>
+    <div class="container-fluid">
+        <h3>Colored Navbar</h3>
+        <p>Use any of the .bg-color classes to add a background color to the navbar.</p>
+        <p>Tip: Add a white text color to all links in the navbar with the .navbar-dark class, or use the .navbar-light
+            class to add a black text color.</p>
+    </div>
+
+    <hr>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">Logo</a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+    <div class="container-fluid">
+        <h3>Brand / Logo</h3>
+        <p>The .navbar-brand class is used to highlight the brand/logo/project name of your page.</p>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="img/bird.jpg" alt="logo" style="width:40px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="container-fluid">
+        <h3>Brand / Logo</h3>
+        <p>When using the .navbar-brand class on images, Bootstrap 4 will automatically style the image to fit the
+            navbar.</p>
+    </div>
+    <hr>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </nav>
+    <br>
+
+    <div class="container-fluid">
+        <h3>Navbar Forms</h3>
+        <p>Use the .form-inline class to align form elements side by side inside the navbar.</p>
+    </div>
+    <hr>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+        </ul>
+        <!-- Navbar text-->
+        <span class="navbar-text">
+            Navbar text
+        </span>
+    </nav>
+    <br>
+
+    <div class="container-fluid">
+        <h3>Navbar Text</h3>
+        <p>Use the .navbar-text class to vertical align any elements inside the navbar that are not links (ensures
+            proper padding).</p>
+    </div>
+    <hr>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+        <a class="navbar-brand" href="#">Logo</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Link</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="container-fluid"><br>
+        <h3>Bottom Fixed Navbar</h3>
+        <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+        <h1>Scroll this page to see the effect</h1>
+      </div>
+</body>
+
+</html>
