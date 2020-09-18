@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+           
+            height: 300px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="media/iphoneSE2.jpg" alt="iphoneSE2" width="1100" height="500" >
+                    <div class="carousel-caption">
+                        <h3 style="background-color: black;">iphoneSE2</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="media/Galaxy Z Flip.jpg" alt="Galaxy Z Flip" width="1100" height="500" >
+                    <div class="carousel-caption">
+                        <h3 style="background-color: black;">Galaxy S10e</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="media/Galaxy S20 ultra.jpg" alt="Galaxy S20 ultra" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3 style="background-color: black;">LG Q5</h3>     
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="container">
+                <form class="form" action="home.html" method="POST">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td>
+                                  <label for="usr" class="col-form-label">Name:</label>
+                                </td>
+                                <td>
+                                  <input type="text" class="form-control" id="usr" name="username" placeholder="아이디">
+                                </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                  <label for="pwd" class="col-form-label">Password:</label>
+                              </td>
+                              <td>
+                                  <input type="password" class="form-control" id="pwd" name="password" placeholder="패스워드">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td colspan="2" style="text-align: center;">
+                                  <a href="home.html"><button type="button" class="btn btn-primary">로그인</button></a>
+                                  <button type="reset" class="btn btn-secondary">취소</button>
+                              </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</body>
+
+</html>
