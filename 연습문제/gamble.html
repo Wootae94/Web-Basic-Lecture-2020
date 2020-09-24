@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambling</title>
+    <script>
+            let clickCount = 0;
+            let numbers = [];
+            let gameMoney = 10000;
+            let gameCount = 0;
+
+            function change(id) {
+                let button = document.getElementById(id);
+                let random = Math.floor(Math.random() * 3);
+                button.innerHTML = random;
+                clickCount++;
+                numbers.push(random);
+                if (clickCount === 3) {
+                    setTimeout(function () {
+                        playGame();
+
+                    }, 3000);
+                }
+            }
+
+        function playGame() {
+            if (numbers[0] === numbers[1] && numbers[0] === numbers[2])
+                gameMoney += 8000;
+            else
+                gameMoney -= 1000;
+            if (gameMoney === 0) {
+                alert('You lose!!! Game Reset');
+                gameMoney = 10000
+                gameCount = 0
+            } else {
+                gameCount ++;
+            }
+            gameCount++;
+            clickCount = 0;
+            numbers = [];
+
+            let moneyDOM = document.getElementById('money');
+            let countDOM = document.getElementById('count');
+            let oneDOM = document.getElementById('one');
+            let twoDOM = document.getElementById('two');
+            let threeDOM = document.getElementById('three');
+            moneyDOM.innerHTML = gameMoney;
+            countDOM.innerHTML = gameCount;
+            oneDOM.innerHTML = '?';
+            twoDOM.innerHTML = '?';
+            threeDOM.innerHTML = '?';
+        }
+        
+    </script>
+</head>
+
+<body>
+    <h1>갬블링 게임</h1>
+    <hr>
+    <h3>같은 숫자 3개가 나오면 승리!</h3>
+
+    <p>게임머니: <span id="money" style="color: crimson;">10000</span>원 
+        횟수: <span id="count" style="color: crimson;">0</span>회</p><br>
+    <button id="one" onclick="change('one');">?</button>
+    <button id="two" onclick="change('two');">?</button>
+    <button id="three" onclick="change('three');">?</button>
+
+</body>
+
+</html>
